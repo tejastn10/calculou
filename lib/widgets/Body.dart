@@ -2,10 +2,18 @@ import 'package:calculou/widgets/Button.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class Body extends StatelessWidget {
+class Body extends StatefulWidget {
   const Body({
     Key key,
   }) : super(key: key);
+
+  @override
+  _BodyState createState() => _BodyState();
+}
+
+class _BodyState extends State<Body> {
+  String _history = "";
+  String _expression = "";
 
   @override
   Widget build(BuildContext context) {
