@@ -6,13 +6,15 @@ class Button extends StatelessWidget {
   final double textSize;
   final Color textColor;
   final Color fillColor;
-  const Button({
-    Key key,
-    this.text,
-    this.textSize = 25,
-    this.fillColor,
-    this.textColor = Colors.white,
-  }) : super(key: key);
+  final Function callback;
+  const Button(
+      {Key key,
+      this.text,
+      this.textSize = 25,
+      this.fillColor,
+      this.textColor = Colors.white,
+      this.callback})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +35,9 @@ class Button extends StatelessWidget {
               ),
             ),
           ),
-          onPressed: () {},
+          onPressed: () {
+            callback(text);
+          },
           color: fillColor != null ? fillColor : null,
           textColor: textColor,
         ),
