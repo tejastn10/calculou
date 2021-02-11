@@ -10,7 +10,7 @@ class Calculou extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Calculou',
-      // debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.blueGrey[900],
         body: Body(),
