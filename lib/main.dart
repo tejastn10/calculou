@@ -1,4 +1,4 @@
-import 'package:calculou/widgets/Body.dart';
+import 'package:calculou/widgets/body.dart';
 import 'package:flutter/material.dart';
 
 void main() {
